@@ -3,7 +3,13 @@
     box-sizing: border-box;
 }
 
+.gameContainer{
+    height: 110vh;
+    display: flex;
+}
 .squareContainer{
+    margin: auto;
+    margin-top: auto;
     width: 810px;
     display: flex;
     border: 5px solid rgb(172, 0, 0);
