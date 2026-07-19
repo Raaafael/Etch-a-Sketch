@@ -4,5 +4,8 @@
 }
 
 .squareContainer{
+    width: 810px;
     display: flex;
+    border: 5px solid rgb(172, 0, 0);
+    flex-wrap: wrap;
 }
