@@ -1,4 +1,4 @@
-const  squareContainer = document.querySelector(".squareContainer")
+const squareContainer = document.querySelector(".squareContainer")
 
 function createSquare() {
     const square = document.createElement("div")
@@ -7,5 +7,12 @@ function createSquare() {
 
 };
 
-createSquare()
-createSquare()
+function multiplySqaure(multiplyBy) {
+    let times = multiplyBy
+    for (let i = 0; i < times; i++) {
+        createSquare()
+    };
+
+};
+
+multiplySqaure(16)
