@@ -6,12 +6,15 @@
 .gameContainer{
     height: 110vh;
     display: flex;
+    flex-direction: column;
 }
 .squareContainer{
     margin: auto;
     margin-top: auto;
-    width: 810px;
+    width: 910px;
+    height: 910px;
     display: flex;
     border: 5px solid rgb(172, 0, 0);
     flex-wrap: wrap;
+    /* flex-direction: column; */
 }

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.boxContainer{
+    display: flex;
+    border: solid 3px red;
+    width: 90px;
+    height: 200px;
+    /* flex-wrap: wrap; */
+
+}
+
+.child1 {
+    display: block;
+    border: 3px solid red;
+    height: 50px;
+    width: 50px;
+}
+
+.child2 {
+    display: block;
+    border: 3px solid red;
+    height: 50px;
+    width: 50px;
+}
