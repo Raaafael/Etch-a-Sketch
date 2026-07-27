@@ -1,10 +1,10 @@
 const squareContainer = document.querySelector(".squareContainer")
-squareContainer.setAttribute(`style`, `display: flex`)
+squareContainer.setAttribute(`style`, `display: flex; flexGrow: 1; flex-wrap: wrap;`)
 
 function createSquare(miniSquareContainer) {
     // This function will create div box.
     const square = document.createElement("div")
-    square.setAttribute(`style`, `border: 1px solid green; width: 50px; height: 50px; flexGrow: 1;`);
+    square.setAttribute(`style`, `border: 1px solid green; width: 50px; height: auto; flex-grow: 1;`);
     miniSquareContainer.appendChild(square);
     
     
@@ -21,7 +21,8 @@ const userInput = document.getElementById("btn1");
 userInput.addEventListener("click", () => {
 
     // This event listner will get user input (number) and multiply it.
- const num = prompt("Input number of squares per side: (max 100)")
+    //  const num = prompt("Input number of squares per side: (max 100)")
+    const num = 100;
 
     if (num <= 100 && num >= 1) {
     
@@ -38,7 +39,7 @@ userInput.addEventListener("click", () => {
 function createBoxBatch(times) {
 
     const boxBatch = document.createElement("div")
-    // boxBatch.setAttribute(`style`, `display: flex;`)
+    boxBatch.setAttribute(`style`, `display: flex; flexGrow: 1; height: auto; width: 100%;`)
     
 
     for (let i = 0; i < times; i++) {
@@ -46,5 +47,4 @@ function createBoxBatch(times) {
     };
 
     return boxBatch
-    console.log(boxBatch)
 };
